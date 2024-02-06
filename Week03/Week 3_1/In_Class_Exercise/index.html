@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intro to CSS Text and Spans</title>
+    <style type="text/CSS">
+       /* universal selector to zero out default margins or padding */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* tag selector applies to every instance of that tag on the page*/
+        p {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left: 0.5rem;
+            color: #FF5500; /* or #f50 */
+            font-family: "Avenir";
+        }
+
+        .sillyText {
+            font-family: fantasy;
+        }
+
+        #reallyImportant {
+            font-weight: 600;
+            font-size: x-large;
+            font-style: oblique;
+            line-height: 1.5;
+            text-transform: uppercase;
+            
+        }
+
+        .indented {
+            text-indent: 20%;
+        }
+
+        .alignRight {
+            text-align: right;
+        }
+
+        .alignJustify {
+            text-align: justify;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 style = 'margin: 10px 20px; color: blueviolet; font-family: Avenir'>Heading 1 Displays Block</h1>
+    <p class = alignRight>
+      <span class="sillyText">Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit. Vestibulum quis
+      justo porta, ultricies sem suscipit, hendrerit metus. Nunc aliquam tellus
+      eu tincidunt rhoncus. Mauris rhoncus risus nec venenatis ultrices.
+      Vestibulum blandit laoreet enim, a aliquam neque tempor sit amet. Duis
+      varius metus vitae felis maximus sagittis. Curabitur vehicula vestibulum
+      felis et posuere. Donec scelerisque volutpat luctus.
+    </p>
+    <p id="reallyImportant" class = alignJustify>
+      Vivamus laoreet, eros quis tincidunt aliquam, orci nisl egestas lacus, sit
+      amet eleifend dolor leo ultricies enim. Nunc mauris neque, iaculis in
+      ullamcorper feugiat, rhoncus et mauris. Aenean sem sem, congue vel
+      fringilla sed, ultrices rutrum purus. Phasellus luctus quam ut placerat
+      sagittis. <a href="https://www.google.com" target="_blank">Mauris vitae faucibus quam,</a> sit amet accumsan magna. Cras nec
+      tempus ligula. Pellentesque a semper arcu.
+    </p>
+    <p class = "indented">
+      Maecenas a nulla et nisi tristique ultricies. Etiam ut justo lacus. Duis
+      eu mauris eu mi finibus efficitur sed vel elit. Aenean vitae varius urna.
+      Nulla maximus tincidunt ipsum, a viverra nibh. Aliquam faucibus metus id
+      ante ullamcorper fermentum. Sed laoreet ipsum erat, ut scelerisque tortor
+      dignissim sed. Etiam maximus mi nulla, efficitur volutpat urna tincidunt
+      eu. Praesent ut ligula libero.
+    </p>
+  </body>
+</html>
