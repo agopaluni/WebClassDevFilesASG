@@ -1,0 +1,3 @@
+# Article reaction
+
+## I think the article highlights a lot of things that I remember learning when I was first starting web design. I used to always just try to jump into design, but as I have worked with web design, I have come to learn that wireframing is incredibly helpful to making and designing these pages. I think the questions that they ask us to evaluate are also quite useful, and I\'92ll definitely be trying to implement those into my design process so I can flesh out ideas ahead of time.
