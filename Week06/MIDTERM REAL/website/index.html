@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Studio Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="sidebar" class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="films.html">Films</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="main-content">
+    <button class="open-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+    </button>
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="apexmedianobackgroundnograin.png" alt="Film Studio Logo" class="logo">
+        </a>
+    </div>
+<div class = "text">
+    <h1>Welcome to APEX Media Company</h1>
+    <p>We are an emerging media company focused on experimental cinema concepts.</p>
+</div>
+<div class="video-container">
+    <video autoplay loop muted playsinline class="homepage-video">
+        <source src="https://apexmediacompanywebsite.s3.us-east-2.amazonaws.com/APEX.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
