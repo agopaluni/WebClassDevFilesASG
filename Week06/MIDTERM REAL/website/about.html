@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film Studio Showcase</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div id="sidebar" class="sidebar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="films.html">Films</a>
-    <a href="contact.html">Contact</a>
-</div>
+    <div id="sidebar" class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="films.html">Films</a>
+    </div> <!-- end of sidebar -->
 
-<div class="main-content">
-    <button class="open-btn" onclick="toggleSidebar()">
-        <span></span>
-        <span></span>
-    </button>    
-    <!-- Logo centered on the home page -->
-    <div class="logo-container">
-        <a href="index.html">
-            <img src="apexmedianobackgroundnograin.png" alt="Film Studio Logo" class="logo">
-        </a>
-    </div>
-<div class = "text">
-    <h1>About</h1>
-    <p>About us</p>
-</div>
-</div>
+    <div class="main-content">
+        <button class="open-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+        </button>
 
-<script src="script.js"></script>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="apexmedianobackgroundnograin.png" alt="Film Studio Logo" class="logo">
+            </a>
+        </div> <!-- end of logo container -->
+
+        <div class="text">
+            <h1>About</h1>
+
+            <h3>A media company focused on pushing the boundaries of film. We're focused on experimental story ideas,
+                combining introspective perspectives with meaningful messages.</h3>
+
+            <h4>About the person: My name is Atharv Gopaluni, and I am a freshman at New York University's Tandon School
+                of Engineering. I am an Integrated Design and Media student.
+
+                I was born in Philadelphia, Pennsylvania on May 17th, 2005. I lived in the area for the first 18 years
+                of my life. I love the area, with its chilly weather and beautiful falls and winters. Ever since
+                childhood, I have been captivated by music and film. I watched my first movie at the age of 6 months
+                old, and I come from a lineage of film-lovers as well.
+
+                As part of Tandon School of Engineering, I am learning technical aspects of filmmaking, and am learning
+                a large breadth of media techniques. I am working on several personal film projects that I hope to soon
+                put out into the world.</h4>
+
+            <h4>About the company: APEX Media Company was founded in 2023 by Atharv Gopaluni. There are several projects
+                under APEX, including films under the subsidiary APEX Studios and podcasts under the larger umbrella
+                APEX Media. APEX seeks to constantly continue creating, there are several projects in the pipeline,
+                including a series of short films to come out on YouTube</h4>
+                
+        </div> <!-- end of text -->
+
+        <img src="aboutme.jpg" alt="About Me Image" class="about-image">
+
+    </div> <!-- end of main content -->
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

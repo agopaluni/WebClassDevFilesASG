@@ -1,10 +1,13 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Avenir;
     background-color: #000000;
     color: white;
-}
+} /* end of body, html */
+
+
 
 .sidebar {
     height: 100%;
@@ -17,7 +20,7 @@ body, html {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 100px;
-}
+} /* end of sidebar */
 
 .sidebar a {
     padding: 10px 15px 10px 25px;
@@ -26,110 +29,96 @@ body, html {
     color: #818181;
     display: block;
     transition: 0.3s;
-}
+} /* end of sidebar a */
 
 .sidebar a:hover {
     color: #f1f1f1;
-}
+} /* end of sidebar a:hover */
+
+.sidebar::after {
+    content: none;
+    /* Removes the film grain effect specifically from the sidebar */
+} /* end of sidebar::after */
+
+
 
 
 .main-content {
     transition: margin-left .5s;
     padding: 20px;
+} /* end of main content */
+
+.content {
+    position: relative;
+    z-index: 2;
 }
+
+
+
 
 .open-btn {
     position: fixed;
-    top: 40px; /* Adjust if necessary to position correctly */
+    top: 40px;
     left: 30px;
     z-index: 2;
-    background-color: transparent; /* Ensure background doesn't hide the spans */
+    background-color: transparent;
     color: white;
     padding: 10px;
     cursor: pointer;
-    border: none; /* Remove border */
-    outline: none; /* Remove outline */
+    border: none;
+    outline: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center; /* Center the lines */
-    height: 50px; /* Adjust the height as needed */
-    width: 50px; /* Adjust the width as needed */
-    transition: transform 0.5s ease; /* Smooth transition */
-}
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.5s ease;
+} /* end of open-btn */
 
 .open-btn span {
     display: block;
     height: 3px;
     background-color: white;
-    width: 30px; /* Ensure lines span the full width of the button */
+    width: 30px;
     transition: transform 0.5s ease, opacity 0.5s ease;
     transform-origin: 50% 50%;
-    /* transform: scale(1); */
-}
+} /* end of open-btn span */
 
-/* Transform spans into an "X" */
-.open-btn.toggle span:nth-child(1), .open-btn.toggle span:nth-child(2) {
-    position: absolute; /* Position spans absolutely within the button */
-    width: 70%; /* Adjust width to control "X" size */
-}
+.open-btn.toggle span:nth-child(1),
+.open-btn.toggle span:nth-child(2) {
+    position: absolute;
+    width: 70%;
+} /* end of open-btn span (both children (each line)) */
 
-/* Transformation for toggling */
 .open-btn.toggle span:nth-child(1) {
     transform: rotate(45deg);
-}
+} /* end of open-btn span (child1) */
 
 .open-btn.toggle span:nth-child(2) {
     transform: rotate(-45deg);
-}
+} /* end of open-btn span (child2) */
 
 
-
-/* .open-btn.toggle { /* A new class to represent the "X" state */
-   /* content: '×'; /* Change content to X */
-   /* font-size: 40px; /* Optionally adjust the size */
-    /* Add any additional styling here to make it visually fit your theme
-} */
 
 
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120px; /* Adjust based on the container's desired height */
-    margin: 0; /* Ensure no additional margin is pushing the logo off-center */
-}
-
+    height: 120px;
+    margin: 0;
+} /* end of logo container */
 
 .logo {
-    max-width: 150px; /* Adjust based on the maximum width you want for your logo */
-    max-height: 120px; /* Adjust based on the maximum height you want for your logo */
-    height: auto; /* Maintain aspect ratio */
-    width: auto; /* Adjust width automatically to maintain aspect ratio */
-}
-
-.sidebar::after {
-    content: none; /* Removes the film grain effect specifically from the sidebar */
-}
+    max-width: 150px;
+    max-height: 120px;
+    height: auto;
+    width: auto;
+} /* end of logo */
 
 
-body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('grain.png') repeat;
-    opacity: 0.25; /* Adjust the opacity to make the effect more subtle or pronounced */
-    pointer-events: none; /* Prevents the overlay from interfering with clicks */
-    z-index: 1; /* Ensures it's above the background but below the content */
-}
 
-.content {
-    position: relative;
-    z-index: 2;
-}
 
 .text {
     padding-left: 50px;
@@ -137,7 +126,18 @@ body::after {
     background: linear-gradient(45deg, #D368D5, #D38953, #D26F55);
     -webkit-background-clip: text;
     background-clip: text;
-}
+    font-family: Avenir;
+    text-align: left;
+    display: block;
+    margin-bottom: 20px;
+} /* end of text */
+
+.text-link {
+    color: #D26F55;
+} /* end of text-link (for links in text)*/
+
+
+
 
 .video-container {
     max-width: 100%;
@@ -146,19 +146,107 @@ body::after {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-}
-
+} /* end of video-container */
 
 .homepage-video {
     max-width: 100%;
-}
+} /* end of homepage-video */
+
+.about-image {
+    width: 100%;
+    height: auto;
+} /* end of about-image (for image on aboutme page */
+
+.film-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+} /* end of film gallery (for film page) */
+
+.section {
+    margin-bottom: 30px;
+} /* end of section (for film page */
+
+.container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    border: 2px solid #FFFFFF;
+} /* end of container */
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+} /* end of image */
+
+.middle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .5s ease;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+} /* end of middle (for the containers on the film page */
+
+.container:hover .middle {
+    opacity: 1;
+} /* end of container:hover .middle (for hover on containers on film page*/
+
+.movie_title {
+    padding-left: 50px;
+    color: transparent;
+    background: linear-gradient(45deg, #D368D5, #D38953, #D26F55);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: left;
+    display: block;
+    margin-bottom: 20px;
+    font-size: x-large;
+} /* end of movie-title for film containers */
 
 .hidden {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-}
+} /* end of hidden */
 
 .visible {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+} /* end of visible */
+
+
+
+
+@media (min-width: 768px) {
+    .film-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    } /* film gallery for smaller screens */
+
+    .middle {
+        padding-left: 5%;
+    } /* middle for smaller screens */
+} 
+
+@media (min-width: 1024px) {
+    .film-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    } /* film gallery for bigger screens */
 }
+
+@media (min-width: 1440px) {
+    .film-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }  /* film gallery for very big screens */
+} 
+/* end of media queries */
