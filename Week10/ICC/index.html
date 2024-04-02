@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS Objects and JSON</title>
+    <script type="text/javascript">
+      // Initialize a new object and store it as a variable named customer
+        const customer = {
+            name: 'Tony',
+            age: 23,
+            married: false,
+            pets: ['dog', 'cat', 'iguana'],
+            siblings: [
+            {name: 'Mary', age: 32, married: true},
+            {name: 'Billy', age: 16, married: false},
+            ],
+        }
+        
+        // Modify the customer object:
+        // Change Tony's Name
+        customer.name = 'Anthony';
+        
+        // Add a new property defining the customer's eyeColor
+        customer.eyeColor = 'brown';
+        
+        // Add the pets and siblings properties to both Mary and Billy
+        customer.siblings.forEach(sibling => {
+            sibling.pets = [...customer.pets]; 
+            sibling.siblings = customer.siblings.filter(s => s.name !== sibling.name); 
+        });
+        
+        // Add Tony's location, be sure to include the fields: houseNumber, street name, town, city
+        customer.location = {
+            houseNumber: 130,
+            streetName: 'Palsgrove Way',
+            town: 'Chester Springs',
+            state: 'Pennsylvania'
+        };
+        
+        // Log the following:
+        // Mary's marital status
+        console.log(customer.siblings.find(sibling => sibling.name === 'Mary').married);
+        
+        // Tony's age
+        console.log(customer.age);
+        
+        // All of Billy's pets
+        console.log(customer.siblings.find(sibling => sibling.name === 'Billy').pets);
+        
+    </script>
+  </head>
+  <body></body>
+</html>
