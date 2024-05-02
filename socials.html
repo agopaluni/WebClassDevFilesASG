@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX Media Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+    <script src="animations2.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="home.html">
+            <img src="ASG.png" alt="Film Studio Logo" class="logo">
+        </a>
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="films.html">Films</a>
+        <a href="contact.html">Contact</a>
+        <div class="sidebar-section">
+            <a href="atharvgopaluni.html">Atharv Gopaluni</a>
+            <div class="sidebar-subpages">
+                <a href="aboutme.html">About</a>
+                <a href="stillimages.html">Still Images</a>
+                <a href="socials.html">Contact/Follow</a>
+            </div>
+        </div>
+    </div> <!-- end of sidebar -->
+
+    <div class="main-content">
+
+        <button class="open-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="ASG-text">
+            <h1>Contact</h1>
+        
+        
+            <div class="contact-form-container">
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xzbnovzr" method="post">
+                    <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                </form> <!-- end of form tag -->
+                
+                <style>
+                    #fs-frm input,
+                    #fs-frm select,
+                    #fs-frm textarea,
+                    #fs-frm fieldset,
+                    #fs-frm optgroup,
+                    #fs-frm label,
+                    #fs-frm #card-element:disabled {
+                        font-family: inherit;
+                        font-size: 100%;
+                        color: white;
+                        border: none;
+                        border-radius: 0;
+                        display: block;
+                        width: 60%;
+                        padding: 0;
+                        margin: 0;
+                    } /* end of card element */
+    
+                    #fs-frm label,
+                    #fs-frm legend,
+                    #fs-frm ::placeholder {
+                        font-size: .825rem;
+                        margin-bottom: .5rem;
+                        padding-top: .2rem;
+                        display: flex;
+                        align-items: baseline;
+                    } /* end of placeholder text */
+                    
+                    /* border, padding, margin, width */
+                    #fs-frm input,
+                    #fs-frm select,
+                    #fs-frm textarea,
+                    #fs-frm #card-element {
+                        background-color: rgb(88, 88, 88);
+                        padding: .75em 1rem;
+                        margin-bottom: 1.5rem;
+                    } /* end of card element */
+    
+                    #fs-frm input:focus,
+                    #fs-frm select:focus,
+                    #fs-frm textarea:focus {
+                        background-color: black;
+                        outline-style: solid;
+                        outline-width: thin;
+                        outline-color: gray;
+                        outline-offset: -1px;
+                    } /* end of focused text area */
+    
+                    #fs-frm [type="text"],
+                    #fs-frm [type="email"] {
+                        width: 100%;
+                    } /* end of text and email */
+    
+                    #fs-frm [type="button"],
+                    #fs-frm [type="submit"],
+                    #fs-frm [type="reset"] {
+                        width: auto;
+                        cursor: pointer;
+                        -webkit-appearance: button;
+                        -moz-appearance: button;
+                        appearance: button;
+                    } /* end of reset button */
+    
+                    #fs-frm [type="button"]:focus,
+                    #fs-frm [type="submit"]:focus,
+                    #fs-frm [type="reset"]:focus {
+                        outline: none;
+                    } /* end of reset focus */
+    
+    
+                    #fs-frm [type="submit"],
+                    #fs-frm [type="reset"] {
+                        margin-bottom: 0;
+                    } /* end of reset margin */
+    
+    
+                    #fs-frm select {
+                        text-transform: none;
+                    } /* end of select */
+                    
+                    </style> <!-- end of embedded style tag -->
+            </div> <!-- end of contact-form-container -->
+
+        </div> <!-- end of ASG-text -->
+        
+        <h2>
+            ____________________________________
+        </h2>
+        <h2>Check out my socials:</h2>
+        <a href="https://www.youtube.com/atharvgopaluni">
+            <h3>YouTube</h3>
+        </a>
+        
+        <a href="https://www.instagram.com/atharvgopaluni">
+            <h3>Instagram</h3>
+        </a>
+
+        <a href="https://www.linkedin.com/in/atharvgopaluni">
+            <h3>LinkedIn</h3>
+        </a>
+
+        <a href="https://github.com/agopaluni">
+            <h3>GitHub</h3>
+        </a> <!--end of final anchor-->
+
+    </div> <!-- end of main content -->
+
+    <script src="forms.js"></script>
+    
+</body>
+
+</html>

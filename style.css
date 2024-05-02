@@ -1,0 +1,373 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Avenir;
+    background-color: #000000;
+    color: white;
+} /* end of body, html */
+
+
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 888;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 120px;
+} /* end of sidebar */
+
+.sidebar a {
+    padding: 10px 15px 10px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+} /* end of sidebar a */
+
+.sidebar a:hover {
+    color: #f1f1f1;
+} /* end of sidebar a:hover */
+
+.sidebar::after {
+    content: none;
+} /* end of sidebar::after */
+
+.sidebar-section {
+    margin-top: 150%; 
+} /* end of sidebar section */
+
+.sidebar-subpages {
+    margin-left: 10%;
+} /* end of sidebar-subpages */
+
+
+
+
+.main-content {
+    transition: margin-left .5s;
+    padding: 20px;
+} /* end of main content */
+
+.content {
+    position: relative;
+    z-index: 2;
+} /* end of content */
+
+
+
+
+.open-btn {
+    position: fixed;
+    top: 40px;
+    left: 30px;
+    z-index: 999;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.5s ease;
+} /* end of open-btn */
+
+.open-btn span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    width: 30px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform-origin: 50% 50%;
+} /* end of open-btn span */
+
+.open-btn.toggle span:nth-child(1),
+.open-btn.toggle span:nth-child(2) {
+    position: absolute;
+    width: 70%;
+} /* end of open-btn span (both children (each line)) */
+
+.open-btn.toggle span:nth-child(1) {
+    transform: rotate(45deg);
+} /* end of open-btn span (child1) */
+
+.open-btn.toggle span:nth-child(2) {
+    transform: rotate(-45deg);
+} /* end of open-btn span (child2) */
+
+
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin: 0;
+    z-index: 12;
+} /* end of logo container */
+
+.logo {
+    max-width: 150px;
+    max-height: 120px;
+    height: auto;
+    width: auto;
+} /* end of logo */
+
+
+
+
+.text {
+    padding-left: 50px;
+    color: transparent;
+    background: linear-gradient(45deg, #D368D5, #D38953, #D26F55);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: Avenir;
+    text-align: left;
+    display: block;
+    margin-bottom: 20px;
+} /* end of text */
+
+.text-link {
+    color: #D26F55;
+} /* end of text-link (for links in text)*/
+
+.homepage-title {
+    text-decoration: none;
+} /* end of homepage-title (controls film titles on the homepage) */
+
+
+
+
+.video-container {
+    position: relative;
+    max-width: 100%;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    object-fit: cover;
+} /* end of video-container */
+
+.homepage-video {
+    max-width: 100%;
+} /* end of homepage-video */
+
+.about-image {
+    width: 100%;
+    height: auto;
+} /* end of about-image (for image on aboutme page */
+
+
+
+
+.film-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+} /* end of film gallery (for film page) */
+
+.section {
+    margin-bottom: 30px;
+} /* end of section (for film page) */
+
+.container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    border: 2px solid #FFFFFF;
+} /* end of container */
+
+.container:hover {
+    transform: scale(1.1); /* Enlarge the container */
+    z-index: 10; /* Ensure it's above other content */
+}
+
+.container:hover .preview {
+    display: block;
+    opacity: 1; /* Show the preview on hover */
+}
+
+.container:hover .image {
+    opacity: 0; /* Hide the original image */
+}
+
+.container:hover .middle {
+    opacity: 1;
+} /* end of container:hover .middle (for hover on containers on film page*/
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+} /* end of image */
+
+.middle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .5s ease;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+} /* end of middle (for the containers on the film page */
+
+
+
+
+.movie_title {
+    padding-left: 50px;
+    color: transparent;
+    background: linear-gradient(45deg, #D368D5, #D38953, #D26F55);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: left;
+    display: block;
+    margin-bottom: 20px;
+    font-size: x-large;
+} /* end of movie-title for film containers */
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+} /* end of hidden */
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+} /* end of visible */
+
+.image, .preview {
+    width: 100%;
+    display: block;
+    transition: opacity 0.3s ease;
+} /* end of .image */
+
+.preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none; /* Hidden by default */
+    opacity: 0;
+} /* end of preview */
+
+
+
+
+.contact-form-container {
+    justify-content: center;
+}
+
+
+
+
+.ASG-video-container {
+    position: relative;
+    max-width: 100%;
+    width: 100vw;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    object-fit: cover;
+} /* end of video-container */
+
+.ASG-text {
+    color: rgb(75, 189, 255);
+} /* end of ASG-text */
+
+
+
+
+.button-container {
+    text-align: center;  /* Centers the buttons */
+    padding: 20px;  /* Adds space around the buttons */
+} /* end of button container */
+
+.button-container button {
+    font-family: Avenir;
+    margin: 10px;  /* Space between buttons */
+    padding: 10px 20px;  /* Padding inside buttons */
+    font-size: 16px;  /* Text size inside buttons */
+    color: white;  /* Text color */
+    background-color: rgb(75, 189, 255);  /* Background color */
+    border: 1px;  /* No border */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor on hover */
+    transition: background-color 0.3s;  /* Smooth transition for background color */
+} /* end of button container button specific */
+
+.button-container button:hover {
+    background-color: #353535;  /* Darker blue when hovered */
+} /* end of button container hover */
+
+
+
+
+.photo-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    border: 0px;
+} /* end of photo container */
+
+.gallery-image {
+    width: 100%; /* Ensures images fill their containers */
+    height: auto; /* Keeps image aspect ratio intact */
+    transition: transform 0.3s ease-in-out;
+} /* end of button container */
+
+
+
+
+@media (min-width: 768px) {
+    .film-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    } /* film gallery for smaller screens */
+
+    .middle {
+        padding-left: 5%;
+    } /* middle for smaller screens */
+
+} 
+
+@media (min-width: 1024px) {
+    .film-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    } /* film gallery for bigger screens */
+}
+
+@media (min-width: 1440px) {
+    .film-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }  /* film gallery for very big screens */
+} 
+/* end of media queries */
+

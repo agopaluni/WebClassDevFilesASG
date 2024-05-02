@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX Media Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+    <script src="animations2.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="home.html">
+            <img src="apexmedianobackgroundnograin.png" alt="Film Studio Logo" class="logo">
+        </a>
+    </header>
+    
+    <video id="background1" class="background" muted loop></video>
+    <video id="background2" class="background" muted loop></video> <!--initialize background for function-->
+
+    <div id="sidebar" class="sidebar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="films.html">Films</a>
+        <a href="contact.html">Contact</a>
+        <div class="sidebar-section">
+            <a href="atharvgopaluni.html">Atharv Gopaluni</a>
+            <div class="sidebar-subpages">
+                <a href="aboutme.html">About</a>
+                <a href="stillimages.html">Still Images</a>
+                <a href="socials.html">Contact/Follow</a>
+            </div>
+        </div>
+    </div> <!-- end of sidebar -->
+
+    <div class="main-content">
+        <button class="open-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+        </button> <!-- end of sidebar button-->
+    </div> <!-- end of main content-->
+
+
+    <div class="titles-container" onmouseleave="fadeoutBackground()">
+        <a href="ILL.html" class = homepage-title>
+            <h1 class="title" data-video="https://apexmediacompanywebsite.s3.us-east-2.amazonaws.com/ILLPreviewWebsite.mov">ILL</h1>
+        </a> <!-- end of ILL -->
+        <a href="ARedLight.html" class = homepage-title>
+            <h1 class="title" data-video="https://apexmediacompanywebsite.s3.us-east-2.amazonaws.com/RedLightPreviewWebsite.mov">A RED LIGHT</h1>
+        </a> <!-- end of ARL -->
+        <a href="SND.html" class = homepage-title>
+            <h1 class="title" data-video="https://apexmediacompanywebsite.s3.us-east-2.amazonaws.com/SNDPreviewWebsite.mov">SATURDAY NIGHT DISCORD</h1>
+        </a> <!-- end of SND -->
+        <a href="tgg.html" class = homepage-title>
+            <h1 class="title" data-video="https://apexmediacompanywebsite.s3.us-east-2.amazonaws.com/TGGPreviewWebsite.mov">THE GRID GURUS</h1>
+        </a> <!-- end of TGG -->
+    </div> <!-- end of titles-container -->
+    
+</body>
+</html>

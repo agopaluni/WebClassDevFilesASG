@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX Media Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+    <script src="animations2.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="home.html">
+            <img src="apexmedianobackgroundnograin.png" alt="APEXMediaCompanyLogo" class="logo">
+        </a>
+    </header> <!--end of sidebar-->
+
+    <div id="sidebar" class="sidebar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="films.html">Films</a>
+        <a href="contact.html">Contact</a>
+        <div class="sidebar-section">
+            <a href="atharvgopaluni.html">Atharv Gopaluni</a>
+            <div class="sidebar-subpages">
+                <a href="aboutme.html">About</a>
+                <a href="stillimages.html">Still Images</a>
+                <a href="socials.html">Contact/Follow</a>
+            </div>
+        </div>
+    </div> <!-- end of sidebar -->
+
+    <div class="main-content">
+        <button class="open-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+        </button>
+    </div> <!-- end of main-content-->
+
+
+    <div class="video-container">
+        <iframe class="homepage-video" 
+        src="https://youtube.com/embed/dkQKDaJucd8" 
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        style="width: 100%; height: 75%;"></iframe>
+    </div> <!-- end of video container (for widescreen film display)-->
+
+    <div class="film-details-container">
+        <div class="text">
+            <h1 class="film-title">A Red Light</h1>
+            <div class="film-info-grid">
+                <div class="info-item"><strong>Directed by:</strong> Atharv Gopaluni</div>
+                <div class="info-item"><strong>Year:</strong> 2024</div>
+                <div class="info-item"><strong>Starring:</strong> Atharv Gopaluni</div>
+                <div class="info-item"><strong>Editors:</strong> Atharv Gopaluni</div>
+            </div> <!-- end of film-info-grid-->
+        </div> <!-- end of text-->
+    </div> <!-- end of film-details-container-->
+
+
+
+    <div class = "film-description-container">
+        <div class = "text">
+            
+            <p>
+                A Red Light is a non-dialogue film, painting a picture of a man that presents a different face to the world than the one he truly is.
+            </p>
+
+            <p>
+                Viewer Discretion Advised: Themes of Depression, Isolation
+            </p>
+
+        </div> <!-- end of text -->
+    <div> <!-- end of film-description-container -->
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://youtube.com/embed/dkQKDaJucd8"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div> <!-- end of video-container (for full film) -->
+
+
+</body>
+
+</html>

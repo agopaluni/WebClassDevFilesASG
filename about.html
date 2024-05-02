@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX Media Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+    <script src="animations2.js"></script>
+</head> <!-- end of head -->
+
+<body>
+    <header>
+        <a href="home.html">
+            <img src="apexmedianobackgroundnograin.png" alt="APEXMediaLogo" class="logo">
+        </a>
+    </header> <!-- end of header -->
+
+    <div id="sidebar" class="sidebar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="films.html">Films</a>
+        <a href="contact.html">Contact</a>
+        <div class="sidebar-section">
+            <a href="atharvgopaluni.html">Atharv Gopaluni</a>
+            <div class="sidebar-subpages">
+                <a href="aboutme.html">About</a>
+                <a href="stillimages.html">Still Images</a>
+                <a href="socials.html">Contact/Follow</a>
+            </div>
+        </div>
+    </div> <!-- end of sidebar -->
+
+    <div class="main-content">
+
+        <button class="open-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+        </button> <!-- end of sidebar button -->
+
+        <div class="text">
+            <h1>Welcome to APEX Media Company</h1>
+            <p>We are an emerging media company focused on experimental cinema concepts.</p>
+        </div> <!-- end of text -->
+
+        <div class="video-container">
+            <video autoplay loop muted playsinline class="homepage-video">
+                <source src="https://apexmediacompanywebsite.s3.us-east-2.amazonaws.com/APEX.mov" type="video/mp4">
+            </video>
+        </div> <!-- end of video container -->
+
+        <div class="text">
+            <p>Our mission is to bring a new vision to the world of film, integrating inclusive values with experimental cinema genres and techniques.</p>
+            <p>APEX Media Company was founded by Atharv Gopaluni in 2023. We constantly strive to be better, and constantly work to come up with new ideas.</p>
+            <a href="contact.html" target ="_blank" class=text-link>Contact us for any business inquiries.</a>
+        </div> <!-- end of text -->
+
+    </div> <!-- end of main content -->
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
